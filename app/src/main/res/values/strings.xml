@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Statki</string>
+    <string name="new_button_label">Nowa gra</string>
+    <string name="title_activity_place_ships">PlaceShipsActivity</string>
+    <string name="smart_opponent">Smart Opponent</string>
+    <string name="random_opponent">Random Opponent</string>
+    <string name="wifi_p2p_opponent">Wifi Direct Opponent</string>
+    <string name="opponent_select">Wybierz przeciwnika</string>
+    <string name="reset_game_title">Zrestrartuj grę</string>
+    <string name="reset_game_prompt">Czy jesteś pewny, że chcesz zrestartować obecną grę?</string>
+    <string name="reset_game_request_prompt">Zaprosić innego gracza do gry?</string>
+    <string name="reset_game_connected_prompt">Inny gracz zaprasza Cie do gry, akceptujesz wyzwanie?</string>
+    <string name="new_game">Nowa gra</string>
+    <string name="place_ships">Ustaw statki</string>
+    <string name="strategy">Losowy przeciwnik</string>
+    <string name="enable_sound">Włącz dźwięk</string>
+    <string name="disable_sound">Wyłącz dźwięk</string>
+    <string name="rotate_ship">Obróc statek</string>
+    <string name="winner_title">Wygrana!</string>
+    <string name="loser_title">Porażka!</string>
+    <string name="winner_description">Wygrałęś niszcząc wszystkie statki przeciwnika!</string>
+    <string name="loser_description">Przegrałeś grę, przeciwnik zniszył wszystkie twoje statki!.</string>
+    <string name="player_turn_status">To twoja tura</string>
+    <string name="computer_turn_status">To tura przciwnika </string>
+    <string name="opponent_turn_status">To tura przeciwnika </string>
+    <string name="win_status">Wygrałeś grę! </string>
+    <string name="lose_status">Przegrałeś! </string>
+    <string name="title_activity_connection">Połączenie</string>
+
+
+</resources>

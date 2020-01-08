@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sea"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="statki.battleship.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".25"
+            android:elevation="1dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+
+                <statki.battleship.BoardView
+                    android:id="@+id/playerBoardView"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_weight="0.30" />
+
+                <TextView
+                    android:id="@+id/strategy_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.30"
+                    android:paddingTop="2dp"
+                    android:text="Przeciwnik"
+                    android:textColor="@android:color/background_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/resetGame"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.22"
+                    android:background="@android:color/holo_green_dark"
+                    android:onClick="resetGame"
+                    android:text="Nowa gra"
+                    android:theme="@style/AppTheme" />
+
+                <Button
+                    android:id="@+id/opponentSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.25"
+                    android:onClick="showOpponentSelectPopup"
+                    android:text="Wybierz przeciwnika" />
+
+                <TextView
+                    android:id="@+id/gameStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.11"
+                    android:text="@string/player_turn_status"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <statki.battleship.BoardView
+            android:id="@+id/opponentBoardView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".65" />
+    </LinearLayout>
+
+</RelativeLayout>
